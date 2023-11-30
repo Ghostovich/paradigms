@@ -1,9 +1,21 @@
 def sort_list_imperative(numbers):
-  # code
+  for i in range(len(numbers)-1):
+        for j in range(len(numbers)-i-1):
+            if numbers[j] < numbers[j+1]:
+                buff = numbers[j]
+                numbers[j] = numbers[j+1]
+                numbers[j+1] = buff
   pass
   return numbers
 
 
 def sort_list_declarative(numbers):
-  # code
+  numbers.sort(reverse = True)
   pass
+
+
+
+ 
+    
+ 
+
